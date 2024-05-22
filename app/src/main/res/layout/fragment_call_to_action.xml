@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:backgroundTint="@color/light_ash">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/type_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="30dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/state_Rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/type_card">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_call_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@android:color/transparent"
+            android:visibility="gone"
+            app:cardCornerRadius="10dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/callToaction_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@android:color/transparent"
+                android:padding="20dp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:backgroundTint="@color/light_ash"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="4dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@color/ash" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/terminate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Terminate"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Call To Action"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/action_done_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Done"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/ta_et"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:layout_marginHorizontal="15dp"
+                android:background="@drawable/et_bg"
+                android:backgroundTint="@color/light_ash"
+                android:clickable="true"
+                android:contextClickable="false"
+                android:drawableRight="@drawable/arrow_drop_icon"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Type of Action"
+                android:inputType="none"
+                android:longClickable="false"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/action_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:layout_marginHorizontal="15dp"
+                android:background="@drawable/et_bg"
+                android:backgroundTint="@color/light_ash"
+                android:hint="Name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/action_url_et"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:layout_marginHorizontal="15dp"
+                android:background="@drawable/et_bg"
+                android:backgroundTint="@color/light_ash"
+                android:hint="Url"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

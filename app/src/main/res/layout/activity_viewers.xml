@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:id="@+id/userView_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#273D56"
+
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/editProfile_cv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="15dp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/back_tv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/round_arrow_back_white"
+                android:elevation="100dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_margin="10dp"/>
+
+
+            <ImageView
+                android:id="@+id/profile_Iv"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/profile_placeholder"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/fullname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Laurel Garrett"
+                android:textStyle="bold"
+                android:textSize="34sp"
+                android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/star_outer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginStart="10dp"
+                    android:drawableRight="@drawable/star_border"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/star_fill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginStart="10dp"
+                    android:drawableRight="@drawable/star_fill"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/work_at_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ventriloquist at Dream Works"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/desc_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmo."
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <!-- Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_contact_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add to Contacts"
+            android:textAllCaps="false"
+            android:shadowRadius="10
+"
+            android:layout_marginHorizontal="12dp"/>
+
+        <!-- Horizontal ScrollView with CardViews -->
+<!--        <HorizontalScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:padding="12dp">-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/socialProfile_cd"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    android:backgroundTint="#F5B5B5B3">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/socialGetList_Rv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"/>
+
+<!--                        <ScrollView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent">-->
+
+<!--                            <GridLayout-->
+<!--                                android:id="@+id/socialLinksContainer"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:columnCount="5"-->
+<!--                                android:rowCount="5"-->
+<!--                                android:orientation="horizontal"/>-->
+<!--                        </ScrollView>-->
+
+
+
+                        <TextView
+                            android:id="@+id/view_all_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="View All"
+                            android:visibility="gone"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/add_list_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Add list"
+                            android:visibility="gone"
+                            android:gravity="center"/>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+
+<!--        </HorizontalScrollView>-->
+
+
+
+    </LinearLayout>
+
+</ScrollView>

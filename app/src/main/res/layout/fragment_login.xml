@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.NumberFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:background="@color/light_black">
+
+        <TextView
+            android:id="@+id/cancel_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Cancel"
+            android:textColor="@color/orange"
+            android:gravity="center"
+            android:paddingStart="20dp"/>
+
+
+        <TextView
+            android:id="@+id/username_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Username"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginEnd="45dp"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginBottom="50dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/light_ash" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/welcome_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create a Unique Username"
+            android:gravity="center"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:textColor="@color/white"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userName_Til"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_bg"
+            android:layout_marginHorizontal="20dp"
+            app:hintTextColor="@color/white"
+            android:visibility="gone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userName_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter User Name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:maxLength="30"
+                android:background="@android:color/transparent"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/enterPass_til"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_bg"
+            android:layout_marginHorizontal="20dp"
+            app:hintTextColor="@color/white"
+            android:visibility="gone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/enterPass_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Password"
+                android:inputType="text"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:background="@android:color/transparent"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signUp_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:background="@drawable/et_bg"
+            android:visibility="visible"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"/>
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

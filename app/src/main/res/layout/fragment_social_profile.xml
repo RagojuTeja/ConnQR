@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5B5B5B3"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bottomSheetRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/addmore_linear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/ash"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+    <TextView
+        android:id="@+id/addMore_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Addmore"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="2dp"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/arrow_forward_icon"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/light_ash">
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="4dp"
+        android:background="@color/ash"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/terminate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terminate"
+            android:textSize="17sp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Details"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/done_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:textSize="17sp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+        <EditText
+            android:id="@+id/fullname_et"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/et_bg"
+            android:backgroundTint="@color/light_ash"
+            android:hint="Full Name"
+            android:maxLength="30"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:autofillHints="name"
+            android:importantForAutofill="no"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+        <EditText
+            android:id="@+id/work_at_et"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Work At"
+            android:padding="10dp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:maxLength="30"
+            android:autofillHints="name"
+            android:backgroundTint="@color/light_ash"
+            android:background="@drawable/et_bg"
+            android:layout_marginHorizontal="15dp"
+            android:importantForAutofill="no"
+            android:layout_margin="10dp" />
+
+    <EditText
+        android:id="@+id/phone_num_et"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:backgroundTint="@color/light_ash"
+        android:background="@drawable/et_bg"
+        android:layout_marginHorizontal="15dp"
+        android:layout_margin="10dp"
+        android:autofillHints="name"
+        android:importantForAutofill="no"
+        />
+
+    <EditText
+        android:id="@+id/secondry_num_et"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Secondary Phone Number"
+        android:inputType="number"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:padding="10dp"
+        android:backgroundTint="@color/light_ash"
+        android:background="@drawable/et_bg"
+        android:layout_marginHorizontal="15dp"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:id="@+id/email_et"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Email"
+        android:inputType="text"
+        android:maxLines="1"
+        android:maxLength="20"
+        android:padding="10dp"
+        android:backgroundTint="@color/light_ash"
+        android:background="@drawable/et_bg"
+        android:layout_marginHorizontal="15dp"
+        android:layout_margin="10dp"
+        android:autofillHints="name"
+        android:importantForAutofill="no"
+        />
+
+        <EditText
+            android:id="@+id/desc_et"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:layout_marginHorizontal="15dp"
+            android:autofillHints="name"
+            android:background="@drawable/et_bg"
+            android:backgroundTint="@color/light_ash"
+            android:hint="Description"
+            android:maxLength="50"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:maxLines="1"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+
+</ScrollView>

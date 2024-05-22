@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.NumberFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:background="@color/light_black">
+
+        <TextView
+            android:id="@+id/cancel_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Cancel"
+            android:textColor="@color/orange"
+            android:gravity="center"
+            android:paddingStart="20dp"/>
+
+
+        <TextView
+            android:id="@+id/secure_account_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Secure Your Account"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:layout_marginEnd="45dp"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginBottom="50dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/light_ash" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/welcome_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Abram"
+            android:gravity="center"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:textColor="@color/white"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/mobileNum_Til"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_bg"
+            android:layout_marginHorizontal="20dp"
+            android:textColorHint="@color/white"
+            app:hintTextColor="@color/white"
+            android:visibility="gone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/mobileNum_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Business Mobile Number"
+                android:inputType="number"
+                android:maxLines="1"
+                android:background="@android:color/transparent"
+                android:maxLength="10"
+                android:textColorHint="@color/white"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/proceed_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proceed"
+            android:textAllCaps="false"
+            android:background="@drawable/et_bg"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/createPass_til"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_bg"
+            android:layout_marginHorizontal="20dp"
+            app:hintTextColor="@color/white"
+            android:visibility="gone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/createPass_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Create Password"
+                android:background="@android:color/transparent"
+                android:inputType="text"
+                android:maxLines="1"
+                android:maxLength="10"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reEnterPass_til"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_bg"
+            android:layout_marginHorizontal="20dp"
+            app:hintTextColor="@color/white"
+            android:visibility="gone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reEnterPass_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Re-Enter Password"
+                android:inputType="text"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:background="@android:color/transparent" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:background="@drawable/et_bg"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/linear_otp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:layout_marginBottom="40dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/otp_til"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_bg"
+                android:layout_marginHorizontal="20dp"
+                android:layout_weight="1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/otp_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter OTP"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:maxLength="4"
+                    android:background="@android:color/transparent"
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/resend_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Resend"
+                android:textAllCaps="false"
+                android:background="@drawable/et_bg"
+                android:visibility="visible"
+                android:layout_marginEnd="10dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="20dp"
+    android:id="@+id/social_card_linear">
+
+    <LinearLayout
+        android:id="@+id/social_item_linearL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/ash">
+
+    <ImageView
+        android:id="@+id/social_ac_iv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/facebook_icon"/>
+
+    <TextView
+        android:id="@+id/social_ac_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Facebook"
+        android:gravity="start"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:layout_weight="1"/>
+
+    <Switch
+        android:id="@+id/switch_action"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textAlignment="viewEnd"
+        android:checked="false"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
